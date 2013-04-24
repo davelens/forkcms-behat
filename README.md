@@ -1,12 +1,11 @@
 # Integration/functional testing with Behat + Mink in Fork CMS
 These files provide an infrastructure to create integration tests for your Fork CMS app.
+They are developed against Fork **3.5.1**
 
 It contains the following:
 * Behat, a BDD framework including webdrivers.
 * Faker, a library used to generate fixtures.
 * Selenium automates browsers.
-
-These files are developed against Fork **3.5.1**
 
 ## Installation
 Move all files in this repo to your Fork CMS project root and run ```./configure_tests.sh```
