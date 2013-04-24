@@ -43,10 +43,10 @@ You probably want to add an alias to your ~/.bashrc or dotfiles of choice so you
 
 ```alias selenium='java -jar /usr/local/bin/selenium-server-standalone-2.31.0.jar'```
 
-## Firefox
+### Firefox
 By default Selenium uses Firefox to run in-browser tests, so make sure it's installed.
 
-### Add Firefox.app location to your PATH
+#### Add Firefox.app location to your PATH
 If you installed your Firefox in a custom location, you need to add it your PATH so Selenium knows where to look for the firefox binary:
 
 ```export PATH=$PATH:$HOME/Applications/Firefox.app/Contents/MacOS```
