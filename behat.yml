@@ -1,0 +1,7 @@
+default:
+    paths:
+        features: tests
+    extensions:
+        Behat\MinkExtension\Extension:
+            goutte: ~
+            selenium2: ~
