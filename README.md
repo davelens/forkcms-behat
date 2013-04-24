@@ -17,8 +17,10 @@ This script does the following things for you:
 
 ## Configuration
 The only thing you need to do is create a test-database with the same name as your app's database, with ```_test``` added to the end.
+
 So if your app's database name is ```forkcms```, your test database should be ```forkcms_test```.
-Note that it should be accessible with the same user/password as your app's database.
+
+Note that it should be accessible with **the same user/password** as your app's database.
 
 ## Running the tests
 Composer generated a ```bin/``` folder containing a symlink to the installed Behat executable in the vendor folders.
