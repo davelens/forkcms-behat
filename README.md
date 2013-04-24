@@ -10,7 +10,7 @@ It contains the following:
 Move all files in this repo to your Fork CMS project root and run ```./configure_tests.sh```
 
 This script does the following things for you:
-* Installs a global composer install if you don't have one set up.
+* Installs a global composer if you don't have one set up.
 * Installs Selenium standalone server so you can run javascript-related tests.
 * It adds Behat, Mink, Faker and all related packages to the project's composer.json.
 * Runs a composer update and installs the above packages
