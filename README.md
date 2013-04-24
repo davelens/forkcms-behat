@@ -6,6 +6,8 @@ It contains the following:
 * Faker, a library used to generate fixtures.
 * Selenium automates browsers.
 
+These files are developed against Fork **3.5.1**
+
 ## Installation
 Move all files in this repo to your Fork CMS project root and run ```./configure_tests.sh```
 
