@@ -18,9 +18,10 @@ This does the following things for you:
 * Runs a composer update and installs the above packages
 
 ## Configuration
-The only thing you need to do is create a test-database with the same name as your app's database, with ```_test``` added to the end.
+You will need a test database so none of your data gets compromised while running the tests.
+Simply create a copy of your app's database with the same name + ```_test``` appended to it.
 
-So if your app's database name is ```forkcms```, your test database should be ```forkcms_test```.
+**Example**: If your app's database name is ```forkcms```, your test database should be named ```forkcms_test```.
 
 Note that it should be accessible with **the same user/password** as your app's database.
 
