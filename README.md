@@ -8,9 +8,10 @@ It contains the following:
 * Selenium automates browsers.
 
 ## Installation
-Move all files in this repo to your Fork CMS project root and run ```./configure_tests.sh```
+1. Move all files in this repo to your Fork CMS project root (by means of a git remote or manually)
+2. Run ```./configure_tests.sh```
 
-This script does the following things for you:
+This does the following things for you:
 * Installs a global composer if you don't have one set up.
 * Installs Selenium standalone server so you can run javascript-related tests.
 * It adds Behat, Mink, Faker and all related packages to the project's composer.json.
