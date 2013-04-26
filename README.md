@@ -40,7 +40,8 @@ bin/behat tests/fork/api/_login.feature
 
 ### @fixtures
 Scenarios tagged with ```@fixtures``` will load the fixtures before running the scenario.
-This includes a cleanup of all fixtures after the scenario is completed.
+
+After such a scenario is finished running, all loaded fixtures will be cleared.
 
 ### @javascript
 Scenarios marked with the ```@javascript``` tag require a Selenium server to be up and running.
