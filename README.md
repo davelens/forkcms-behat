@@ -67,5 +67,5 @@ If you want to learn to write tests yourself, read up on the behat/mink docs:
 - [Behat docs](http://docs.behat.org/)
 - [Mink docs](http://mink.behat.org/)
 - [Faker docs](https://github.com/fzaninotto/Faker)
-- [Wikipedia](http://en.wikipedia.org/wiki/Behavior-driven_development)
+- [BDD on Wikipedia](http://en.wikipedia.org/wiki/Behavior-driven_development)
 
