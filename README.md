@@ -43,9 +43,9 @@ Scenarios tagged with ```@fixtures``` will load the fixtures before running the 
 This includes a cleanup of all fixtures after the scenario is completed.
 
 ### @javascript
-Scenarios marked with the ```@javascript``` tag require Selenium to be running.
+Scenarios marked with the ```@javascript``` tag require a Selenium server to be up and running.
 
-To start a server, run the following command:
+To start a Selenium server, run the following command:
 
 ```java -jar /usr/local/bin/selenium-server-standalone-2.31.0.jar```
 
