@@ -22,7 +22,7 @@ class FixtureContext extends BehatContext
 	}
 
 	/**
-	 * @AfterScenario @fixtures @cleanup
+	 * @AfterScenario @fixtures, @cleanup
 	 */
 	public function cleanFixtures()
 	{
