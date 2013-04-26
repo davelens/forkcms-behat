@@ -2,7 +2,7 @@
 These files provide an infrastructure to create integration tests for your Fork CMS app.
 They are developed against Fork **3.5.1**
 
-It contains the following:
+The following packages are used:
 * Behat, a BDD framework including webdrivers.
 * Faker, a library used to generate fixtures.
 * Selenium automates browsers.
@@ -38,8 +38,13 @@ Run a specific feature:
 bin/behat tests/fork/api/_login.feature
 ```
 
-### Javascript tests
-Some tests require Selenium to be up and running.
+### @fixtures
+Scenarios tagged with ```@fixtures``` will load the fixtures before running the scenario.
+This includes a cleanup of all fixtures after the scenario is completed.
+
+### @javascript
+Scenarios marked with the ```@javascript``` tag require Selenium to be running.
+
 To start a server, run the following command:
 
 ```java -jar /usr/local/bin/selenium-server-standalone-2.31.0.jar```
@@ -48,11 +53,11 @@ You probably want to add an alias to your ~/.bashrc or dotfiles of choice so you
 
 ```alias selenium='java -jar /usr/local/bin/selenium-server-standalone-2.31.0.jar'```
 
-### Firefox
+#### Firefox
 By default Selenium uses Firefox to run in-browser tests, so make sure it's installed.
 
-#### Add Firefox.app location to your PATH
-If you installed your Firefox in a custom location, you need to add it your PATH so Selenium knows where to look for the firefox binary:
+#### Help! My Firefox is installed in a custom location and Selenium can't find it!
+You need to add the Firefox binary to your PATH variable so Selenium knows where to look for it:
 
 ```export PATH=$PATH:$HOME/Applications/Firefox.app/Contents/MacOS```
 
