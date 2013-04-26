@@ -1,6 +1,8 @@
 # Integration/functional testing with Behat + Mink in Fork CMS
-These files provide an infrastructure to create integration tests for your Fork CMS app.
-They are developed against Fork **3.5.1**
+These files provide an infrastructure to create integration tests for your Fork CMS app.  
+They are developed against Fork **3.5.1** and are **not a perfect integration**.
+
+That said, so far it has proven to save a considerable amount of time in a number of Real World™ projects.
 
 The following packages are used:
 * Behat, a BDD framework including webdrivers.
@@ -18,7 +20,7 @@ This does the following things for you:
 * Runs a composer update and installs the above packages
 
 ## Configuration
-You will need a test database so none of your data gets compromised while running the tests.
+You will need a test database so none of your data gets compromised while running the tests.  
 Simply create a copy of your app's database with the same name + ```_test``` appended to it.
 
 **Example**: If your app's database name is ```forkcms```, your test database should be named ```forkcms_test```.
@@ -39,8 +41,7 @@ bin/behat tests/fork/api/_login.feature
 ```
 
 ### @fixtures
-Scenarios tagged with ```@fixtures``` will load the fixtures before running the scenario.
-
+Scenarios tagged with ```@fixtures``` will load the fixtures before running the scenario.  
 After such a scenario is finished running, all loaded fixtures will be cleared.
 
 ### @javascript
