@@ -1,7 +1,6 @@
 # Integration/functional testing with Behat + Mink in Fork CMS
 These files provide an infrastructure to create integration tests for your Fork CMS app.  
-They are developed against Fork **3.5.1** and are **not a perfect integration**.
-
+They are developed against Fork **3.5.1** and are **not a perfect integration**.  
 That said, so far it has proven to save a considerable amount of time in a number of Real World™ projects.
 
 The following packages are used:
