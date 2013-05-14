@@ -11,12 +11,28 @@ use Behat\Behat\Context\ClosuredContextInterface,
 class ForkBackendContext extends BehatContext
 {
 	/**
-	 * @Given /^I am logged in as an admin$/
+	 * @Given /^I am logged in as an? (\w+)$/
 	 */
-	public function iAmLoggedInAsAnAdmin()
+	public function iAmLoggedInAsA($role)
 	{
+		if(!in_array($role, array('client', 'admin')))
+		{
+			throw new Exception('Invalid role. Valid roles are client or admin.');
+		}
+
+		switch($role)
+		{
+			case 'admin':
+				$userID = 1337;
+				break;
+
+			case 'client':
+				$userID = 1338;
+				break;
+		}
+
 		$loader = $this->getMainContext()->getSubContext('fixtures')->getLoader();
-		$user = $loader->getBackendUser(1337);
+		$user = $loader->getBackendUser($userID);
 
 		if(!($user instanceof BackendUser))
 		{
