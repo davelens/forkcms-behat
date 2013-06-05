@@ -18,4 +18,4 @@ Feature:
 		Given I prepare a GET request to the API
 		And I pass parameter "id" with value "1"
 		And I do the call
-		Then I should see "afton82@yahoo.com" in the output
+		Then I should see "lina.peeters@gmail.com" in the output

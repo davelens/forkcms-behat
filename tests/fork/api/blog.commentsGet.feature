@@ -12,4 +12,4 @@ Feature:
 		And I pass parameter "method" with value "blog.commentsGet"
 		And I pass parameter "language" with value "en"
 		And I do the call
-		Then I should see "afton82@yahoo.com" in the output
+		Then I should see "lina.peeters@gmail.com" in the output
