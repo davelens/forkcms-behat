@@ -6,7 +6,7 @@ Feature:
 		Given I am logged in as an admin
 		And I am on "/private/en/blog/add"
 
-	@javascript
+	@fixtures @javascript
 	Scenario: Adding a new blogpost with valid data should show a message
 		Given I fill in "title" with "TestPost"
 		And I fill in the editor "text" with "Dit is de inhoud"
