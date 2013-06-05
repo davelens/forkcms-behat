@@ -20,6 +20,7 @@ Feature:
 		And I do the call
 		Then I should see "This account does not exist" in the output
 
+	@fixtures
 	Scenario: Providing an invalid secret key should trigger an error.
 		Given I pass invalid login credentials to the API
 		And I prepare a GET request to the API
