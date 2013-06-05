@@ -68,5 +68,5 @@ if ! grep -Rq '"bin-dir"' composer.json; then
 	fi
 fi
 
-composer update >/dev/null
+composer update
 echo 'done!'
