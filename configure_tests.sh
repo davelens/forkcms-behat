@@ -17,14 +17,11 @@ if ! which composer >/dev/null; then
 fi
 
 # Install composer if necessary
-if [ ! -f /usr/local/bin/selenium-server-standalone-2.31.0.jar ]; then
+if ! brew list | grep 'selenium-server-standalone' >/dev/null; then
 	echo 'Installing Selenium'
-	cd /usr/local/bin
-	curl -O http://selenium.googlecode.com/files/selenium-server-standalone-2.31.0.jar
-	cd - >/dev/null
+	brew install selenium-server-standalone
 
-	echo 'It would be wise to create an alias in your profile config of choice.'
-	echo "	alias selenium='java -jar /usr/local/bin/selenium-server-standalone-2.31.0.jar'"
+	echo 'You can start selenium with the command "selenium-server-standalone"'
 fi
 
 # If anyone knows a less messy routine without using json libs; let me know!
