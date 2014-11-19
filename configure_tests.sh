@@ -16,7 +16,7 @@ if ! which composer >/dev/null; then
 	cd - >/dev/null
 fi
 
-# Install composer if necessary
+# Install selenium if necessary
 if ! brew list | grep 'selenium-server-standalone' >/dev/null; then
 	echo 'Installing Selenium'
 	brew install selenium-server-standalone
