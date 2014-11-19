@@ -21,7 +21,7 @@ if ! brew list | grep 'selenium-server-standalone' >/dev/null; then
 	echo 'Installing Selenium'
 	brew install selenium-server-standalone
 
-	echo 'You can start selenium with the command "selenium-server-standalone"'
+	echo 'You can start selenium with the command "selenium-server"'
 fi
 
 # If anyone knows a less messy routine without using json libs; let me know!
